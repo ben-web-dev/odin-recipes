@@ -1,15 +1,17 @@
+html {
+    display: flex;
+}
+
 body {
-    background-color: lightpink;
+    background-color: #fafafa;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1, h2 {
     display: flex;
-    width: 100vw;
     justify-content: center;
 }
 .links {
@@ -30,17 +32,36 @@ h1, h2 {
 }
 
 .intro {
-    width: 80vw;
     text-align: center;
     margin-bottom: 5vw;
+    width: 90vw;
 }
 
 .recipe-photo {
-    max-width: 70vw;
     overflow: hidden;
 }
 
 .recipe-photo>img {
     width: 60vw;
     margin-bottom: 5vw;
+    animation: ease-in;
+}
+
+.ingredients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid lightgrey;
+    padding: 3vw;
+    padding-inline: 10vw;
+    border-radius: 5vw;
+    background-color: royalblue;
+    color: #fafafa;
+}
+
+body>ol>li {
+    margin-block: 2vw;
+}
+body>ol {
+    width: 90vw;
 }
