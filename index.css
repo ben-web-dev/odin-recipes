@@ -1,0 +1,46 @@
+body {
+    background-color: lightpink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h2 {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+.links>a {
+    text-decoration: none;
+    color: black;
+    margin: 1.7vh;
+    padding: 0.3vh;
+    background-color: salmon;
+    width: 25vw;
+}
+
+.intro {
+    width: 80vw;
+    text-align: center;
+    margin-bottom: 5vw;
+}
+
+.recipe-photo {
+    max-width: 70vw;
+    overflow: hidden;
+}
+
+.recipe-photo>img {
+    width: 60vw;
+    margin-bottom: 5vw;
+}
