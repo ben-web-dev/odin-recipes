@@ -1,34 +1,66 @@
+@font-face {
+    font-family: Norse;
+    src: local("/images/Norse.otf");
+} 
+
 html {
     display: flex;
 }
 
 body {
-    background-color: #fafafa;
+    background-color: #eaeaea;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(180deg, rgb(182, 159, 97), rgb(128, 89, 24));
+    min-height: 100vh;
+}
+
+.title-container {
+    font-family: Norse;
+    color: darkkhaki;
+}
+
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
 }
 
 h1, h2 {
     display: flex;
     justify-content: center;
+    font-family: Norse;
+    color: khaki;
 }
 .links {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 .links>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
-    color: black;
+    text-align: center;
+    color: khaki;
     margin: 1.7vh;
     padding: 0.3vh;
-    background-color: salmon;
+    background: linear-gradient(180deg, rgb(182, 159, 97), rgb(128, 89, 24));
     width: 25vw;
+    height: 25vw;
+    font-family: Norse;
+    border-radius: 5vh;
+    border: 1vw solid khaki;
+}
+.links>a:hover {
+    scale: 1.05;
+    transition: 300ms;
+    background-color: rgba(0, 0, 255, 0.8);
 }
 
 .intro {
